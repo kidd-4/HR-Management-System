@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+  	<servlet-name>loginAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.LoginAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>loginAction</servlet-name>
+  	<url-pattern>/doLogin</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+  	<servlet-name>queryAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.QueryAllAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>queryAction</servlet-name>
+  	<url-pattern>/doQueryAll</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  	<servlet-name>queryAction2</servlet-name>
+  	<servlet-class>com.icss.java.data.action.QueryStaffDocumentAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>queryAction2</servlet-name>
+  	<url-pattern>/doQueryAll2</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>queryAction3</servlet-name>
+  	<servlet-class>com.icss.java.data.action.QueryStaffFileAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>queryAction3</servlet-name>
+  	<url-pattern>/doQueryAll3</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+  	<servlet-name>registAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.RegistAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>registAction</servlet-name>
+  	<url-pattern>/doRegist</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>registAction2</servlet-name>
+  	<servlet-class>com.icss.java.data.action.RegistStaffDocumentAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>registAction2</servlet-name>
+  	<url-pattern>/doRegist2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>registAction3</servlet-name>
+  	<servlet-class>com.icss.java.data.action.RegistStaffFileAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>registAction3</servlet-name>
+  	<url-pattern>/doRegist3</url-pattern>
+  </servlet-mapping>
+  
+  
+    
+      <servlet>
+  	<servlet-name>updateAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.UpdateAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>updateAction</servlet-name>
+  	<url-pattern>/doUpdate</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>updateAction2</servlet-name>
+  	<servlet-class>com.icss.java.data.action.UpdateStaffDocumentAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>updateAction2</servlet-name>
+  	<url-pattern>/doUpdate2</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>updateAction3</servlet-name>
+  	<servlet-class>com.icss.java.data.action.UpdateStaffFileAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>updateAction3</servlet-name>
+  	<url-pattern>/doUpdate3</url-pattern>
+  </servlet-mapping>
+  
+  
+        <servlet>
+  	<servlet-name>deleteAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DeleteAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>deleteAction</servlet-name>
+  	<url-pattern>/doDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>deleteAction2</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DeleteStaffDocumentAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>deleteAction2</servlet-name>
+  	<url-pattern>/doDelete2</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>deleteAction3</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DeleteStaffFileAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>deleteAction3</servlet-name>
+  	<url-pattern>/doDelete3</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>resultDelete</servlet-name>
+  	<servlet-class>com.icss.java.data.action.ResultDelete</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>resultDelete</servlet-name>
+  	<url-pattern>/doResultDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>proUpdate</servlet-name>
+  	<servlet-class>com.icss.java.data.action.ProUpdate</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>proUpdate</servlet-name>
+  	<url-pattern>/doProUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>proSearch</servlet-name>
+  	<servlet-class>com.icss.java.data.action.ProSearch</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>proSearch</servlet-name>
+  	<url-pattern>/doSearch</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>resultSearch</servlet-name>
+  	<servlet-class>com.icss.java.data.action.ResultSearch</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>resultSearch</servlet-name>
+  	<url-pattern>/doResultSearch</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>resultUpdate</servlet-name>
+  	<servlet-class>com.icss.java.data.action.ResultUpdate</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>resultUpdate</servlet-name>
+  	<url-pattern>/doResultUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+  	<servlet-name>proDelete</servlet-name>
+  	<servlet-class>com.icss.java.data.action.ProDelete</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>proDelete</servlet-name>
+  	<url-pattern>/doProDelete</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>QueryDepartAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.QueryDepartAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>QueryDepartAction</servlet-name>
+  	<url-pattern>/doQueryDepart</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>UpdateDepartAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.UpdateDepartAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateDepartAction</servlet-name>
+  	<url-pattern>/doUpdateDepart</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>AddDepartAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.AddDepartAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddDepartAction</servlet-name>
+  	<url-pattern>/doAddDepart</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>DeleteDepartAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DeleteDepartAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteDepartAction</servlet-name>
+  	<url-pattern>/doDeleteDepart</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+
+
+<servlet>
+  	<servlet-name>QueryContactAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.QueryContactAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>QueryContactAction</servlet-name>
+  	<url-pattern>/doQueryContact</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>UpdateContactAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.UpdateContactAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateContactAction</servlet-name>
+  	<url-pattern>/doUpdateContact</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>AddContactAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.AddContactAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddContactAction</servlet-name>
+  	<url-pattern>/doAddContact</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>DeleteContactAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DeleteContactAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteContactAction</servlet-name>
+  	<url-pattern>/doDeleteContact</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>loginActionLate</servlet-name>
+  	<servlet-class>com.icss.java.data.action.LateLoginAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>loginActionLate</servlet-name>
+  	<url-pattern>/doLateLogin</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+  	<servlet-name>queryActionLate</servlet-name>
+  	<servlet-class>com.icss.java.data.action.LateQueryAllAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>queryActionLate</servlet-name>
+  	<url-pattern>/doLateQueryAll</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+  	<servlet-name>AddAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.LateAddAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>AddAction</servlet-name>
+  	<url-pattern>/doLateRegist</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    
+      <servlet>
+  	<servlet-name>updateActionLate</servlet-name>
+  	<servlet-class>com.icss.java.data.action.LateUpdateAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>updateActionLate</servlet-name>
+  	<url-pattern>/doLateUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+        <servlet>
+  	<servlet-name>deleteActionLate</servlet-name>
+  	<servlet-class>com.icss.java.data.action.LateDeleteAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>deleteActionLate</servlet-name>
+  	<url-pattern>/doLateDelete</url-pattern>
+  </servlet-mapping>
+  
+      <!-- Dayoff -->
+      
+   <servlet>
+  	<servlet-name>loginAction2</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DayoffLoginAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>loginAction2</servlet-name>
+  	<url-pattern>/doDayoffLogin</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+  	<servlet-name>queryActiondayoff</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DayoffQueryAllAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>queryActiondayoff</servlet-name>
+  	<url-pattern>/doDayoffQueryAll</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+  	<servlet-name>AddAction2</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DayoffAddAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>AddAction2</servlet-name>
+  	<url-pattern>/doDayoffRegist</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    
+      <servlet>
+  	<servlet-name>updateActiondayoff</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DayoffUpdateAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>updateActiondayoff</servlet-name>
+  	<url-pattern>/doDayoffUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+        <servlet>
+  	<servlet-name>deleteActiondayoff</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DayoffDeleteAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>deleteActiondayoff</servlet-name>
+  	<url-pattern>/doDayoffDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+  	<servlet-name>queryActionDivision</servlet-name>
+  	<servlet-class>com.icss.java.data.action.QueryDivisionAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>queryActionDivision</servlet-name>
+  	<url-pattern>/doQueryDivision</url-pattern>
+  </servlet-mapping>
+  
+  
+    
+  
+  
+  
+    
+      <servlet>
+  	<servlet-name>updateActionDivision</servlet-name>
+  	<servlet-class>com.icss.java.data.action.UpdateDivisionAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>updateActionDivision</servlet-name>
+  	<url-pattern>/doUpdateDivision</url-pattern>
+  </servlet-mapping>
+  
+  
+        <servlet>
+  	<servlet-name>deleteActionDivision</servlet-name>
+  	<servlet-class>com.icss.java.data.action.DeleteDivisionAction</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>deleteActionDivision</servlet-name>
+  	<url-pattern>/doDeleteDivision</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  	<servlet-name>addAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.AddDivisionAction</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>addAction</servlet-name>
+  	<url-pattern>/doAddDivision</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+  	<servlet-name>AbsentQueryAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.AbsentQueryAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>AbsentQueryAction</servlet-name>
+  	<url-pattern>/doQueryAbsent</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+  	<servlet-name>AbsentAddAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.AbsentAddAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>AbsentAddAction</servlet-name>
+  	<url-pattern>/doAddAbsent</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    
+      <servlet>
+  	<servlet-name>AbsentUpdateAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.AbsentUpdateAction</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>AbsentUpdateAction</servlet-name>
+  	<url-pattern>/doUpdateAbsent</url-pattern>
+  </servlet-mapping>
+  
+  
+        <servlet>
+  	<servlet-name>AbsentDeleteAction</servlet-name>
+  	<servlet-class>com.icss.java.data.action.AbsentDeleteAction</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>AbsentDeleteAction</servlet-name>
+  	<url-pattern>/doDeleteAbsent</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
